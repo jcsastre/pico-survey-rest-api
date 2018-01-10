@@ -9,9 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 @NoArgsConstructor
-@RequiredArgsConstructor
-@Getter
-@Setter
+@Data
 public class Subject {
 
     @Id

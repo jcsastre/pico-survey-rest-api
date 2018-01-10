@@ -5,6 +5,7 @@ import com.jcsastre.picosurveyrestapi.repository.SubjectRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SubjectServiceImpl implements SubjectService {
@@ -18,6 +19,14 @@ public class SubjectServiceImpl implements SubjectService {
     @Override
     public List<Subject> findAll() {
 
-        return subjectRepository.findAll();
+        return
+            subjectRepository.findAll();
+    }
+
+    @Override
+    public Optional<Subject> findByName(String name) {
+
+        return
+            subjectRepository.findByName(name);
     }
 }

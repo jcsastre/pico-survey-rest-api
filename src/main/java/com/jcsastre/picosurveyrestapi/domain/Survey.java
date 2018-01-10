@@ -6,9 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor
-@RequiredArgsConstructor
-@Getter
-@Setter
+@Data
 public class Survey {
 
     @Id

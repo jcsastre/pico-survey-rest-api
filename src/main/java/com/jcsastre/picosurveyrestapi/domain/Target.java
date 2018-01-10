@@ -6,9 +6,7 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 @NoArgsConstructor
-@RequiredArgsConstructor
-@Getter
-@Setter
+@Data
 public class Target {
 
     @NonNull private Gender gender;
